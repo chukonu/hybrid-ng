@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+.ajs {
+	padding: 2em;
+	background-color: lavender;
+	border: 1px solid purple;
+	font-family: sans-serif;
+	margin: .5em 0;
+}
+
+.title {
+	font-style: italic;
+	font-size: smaller;
+}

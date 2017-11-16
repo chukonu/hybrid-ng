@@ -1,3 +1,9 @@
-<p>
-  agent-table works!
-</p>
+<table>
+  <thead>
+    <tr>
+      <th>Agent</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let agent of agents"><td>{{agent.name}}</td></tr>
+</table>
+<button (click)="add('Edward')">Add</button>

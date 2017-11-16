@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { downgradeComponent, UpgradeModule } from '@angular/upgrade/static';
 import { AgentTableComponent } from './agent-table/agent-table.component';
 import { ApplicationRef } from '@angular/core/src/application_ref';
-import { AgentDetailComponent } from './agent-detail/agent-detail.component';
 
 angular.module('hybridApp', [])
   .controller('ajs', function () {
@@ -19,8 +18,6 @@ angular.module('hybridApp', [])
     'agentTable',
     downgradeComponent({ component: AgentTableComponent }) as angular.IDirectiveFactory
   );
-
-// angular.bootstrap(document.body, ['hybridApp'], { strictDi: true });
 
 @NgModule({
   declarations: [
@@ -32,13 +29,6 @@ angular.module('hybridApp', [])
     UpgradeModule
   ],
   providers: [],
-
-  // bootstrap: [
-  //   AppComponent,
-  //   AgentTableComponent
-  // ],
-  // bootstrap: [AppComponent],
-
   entryComponents: [
     AppComponent,
     AgentTableComponent
